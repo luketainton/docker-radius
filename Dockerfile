@@ -1,5 +1,6 @@
 FROM alpine:3.18 as build
 LABEL maintainer="Luke Tainton <luke@tainton.uk>"
+LABEL org.opencontainers.image.source="https://github.com/luketainton/docker-radius"
 
 FROM build as webproc
 ENV WEBPROCVERSION 0.4.0
